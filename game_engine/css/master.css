@@ -1,0 +1,33 @@
+#game,#numbers,#head,#download{
+	width: 500px;
+	margin: 0 auto;
+}
+#game{
+	height: 450px;
+}
+#numbers{
+	height:50px;
+	cursor:pointer;
+}
+#game div{
+	width: 45px;
+	height: 45px;
+	margin-right: 5px;
+	margin-bottom:5px;
+	border: 1px solid #ccc;
+	border-bottom:2px solid #ccc;
+	border-right:2px solid #ccc; 
+	float: left;
+	cursor: pointer;
+}
+#numbers div{
+	width:45px;
+	height:45px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	float:left;
+}
+#download{
+	margin-top:10px;
+	text-align:center;
+}

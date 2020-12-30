@@ -1,0 +1,225 @@
+body{
+	background:#e9e9e9;
+	font-family: arial;
+}
+a{
+	color: #888;
+}
+a:hover{
+	color: #333;
+}
+#game,#numbers{
+	margin: 0 auto;
+}
+#game{height: 450px;width: 500px;margin-bottom: 50px;}
+#numbers{clear:both;height:200px;width:150px;}
+#game div{
+	
+	width: 45px;
+	height: 45px;
+	margin-right: 2px;
+	margin-bottom:5px;
+	border: 1px solid #ccc;
+	border-bottom:2px solid #ccc;
+	border-right:2px solid #ccc; 
+	float: left;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#game div:nth-child(3n+3){
+	margin-right: 10px;
+}
+
+#game div:hover,#game .banned{
+	border: 1px solid #666;
+	border-top:2px solid #777;
+	border-left:2px solid #777;
+}
+#game div:nth-child(19),#game div:nth-child(20),#game div:nth-child(21),#game div:nth-child(22),#game div:nth-child(23),#game div:nth-child(24),#game div:nth-child(25),#game div:nth-child(26),#game div:nth-child(27),#game div:nth-child(46),#game div:nth-child(47),#game div:nth-child(48),#game div:nth-child(49),#game div:nth-child(50),#game div:nth-child(51),#game div:nth-child(52),#game div:nth-child(53),#game div:nth-child(54){
+	margin-bottom: 10px;
+}
+#editor{
+	width: 500px;
+	height:50px;
+	margin: 0 auto;
+}
+#numbers div,#editor div{
+	width:45px;
+	height:45px;
+	margin-right: 1px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 2px solid #888;
+	border-bottom: 2px solid #888;
+	float:left;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#numbers div:last-child{
+margin-left: 50px;
+margin-top: 3px;
+}
+#numbers .selected{
+	border-top: 2px solid #111;
+	border-left: 2px solid #111;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#win{
+	font-family: Arial;
+	text-align: center;
+	font-size: 100px;
+	padding-top: 50px;
+	color: #eee;
+	background-image:url('i/winbg.png');
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+}
+#rules,#header{position: absolute;}
+#header{
+	width:100px;
+	height:200px;
+	background-image:url('i/irosudoku.png');
+	left:0;
+	top:0;
+}
+#rules{
+border: 1px solid #666;
+-webkit-border-radius: 3px;
+    border-radius: 3px;
+	background-color: #fff;
+width: 150px;
+padding: 10px;
+text-align: justify;
+right: 100px;
+top:10px;
+}
+#header h1{
+	display:none;
+}
+#titletext{
+	width:500px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size:20px;
+	color: #313131;
+	font-family:arial;
+}
+#options{
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#twitter{
+	width: 500px;
+	margin:0 auto;
+	height: 50px;
+}
+#twitter a{
+	display: block;
+	padding: 8px 5px 2px 20px;
+	background: #eee;
+	
+	border: 1px solid #ccc;
+	cursor: pointer;
+	height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#twitter a:hover{
+	text-decoration: underline;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#buttons{
+	width:208px;
+	margin:0 auto;
+}
+#tryIt{
+	width: 200px;
+	cursor: pointer;
+	height:20px;
+	margin:0 auto;
+	text-align:center;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 2px solid #888;
+	border-bottom: 2px solid #888;
+	background: #ccc;
+}
+
+#saving{
+	width:100%;
+	height:100%;
+	padding-top: 200px;
+	background-image:url('i/winbg.png');
+	position: absolute;
+	top:0;
+	right:0;
+	
+}
+#saveArea{
+	display:block;
+	margin: 0 auto;
+	height: 150px;
+	width: 400px;
+	margin: 0 auto;
+}
+#saveTxtAlert{
+	width:400px;
+	color: #efefef;
+	margin: 0 auto;
+	margin-bottom: 3px;
+}
+#blockerControls{
+	width: 300px;
+	margin: 0 auto;
+}
+#aside{
+	font-size:10px;
+}
+#c0{
+	margin-right: 10px;
+	font-size: 10px;
+	padding-left:2px;
+}
+.controls{
+	float:left;
+	width: 100px;
+	cursor: pointer;
+	height:20px;
+	margin:0 auto;
+	text-align:center;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 2px solid #888;
+	border-bottom: 2px solid #888;
+	background: #ccc;
+}
+.restart{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 2px solid #888;
+	border-bottom: 2px solid #888;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.restart:active,.controls:active{
+	border-top: 2px solid #111;
+	border-left: 2px solid #111;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.small{
+	
+	font-size:70%;
+}

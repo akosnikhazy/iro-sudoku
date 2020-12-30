@@ -1,0 +1,138 @@
+<!--
+Ákos Nikházy's Sudoku Game Engine.
+-Checking if all items are filled
+-If all items are filled check if it is a win
+-It can load puzzles. 
+ A puzzle is an array of numbers, with 82 items. The first item can be the name, or a dummy value.
+-It isn't jQuery dependent but I ship it with jQuery. This way it is easier to set up controls
+ if you want it to use without jQuery you should write your own controls. Be aware that fillTable()
+ function has a jQuery line in the middle of it for changing the state of the items.
+-Every item has id like this "line_column". It is important for the script to be like this.
+ 
+You are free to use this. Please mention me in code or ont the app you create from it.
+ 
+I use this engine in this app:	http://color-sudoku.nikhazy-dizajn.hu/
+My site: 						http://nikhazy-dizajn.hu/
+
+(c) Ákos Nikházy
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Ákos Nikházy's Basic Sudoku Game Engine</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/master.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="head">Example game. The bottom right corner is a 5. Check out console for further info on winning and losing.</div>
+	<div id="game">
+		<div id="1_1"></div>
+		<div id="1_2"></div>
+		<div id="1_3"></div>
+		<div id="1_4"></div>
+		<div id="1_5"></div>
+		<div id="1_6"></div>
+		<div id="1_7"></div>
+		<div id="1_8"></div>
+		<div id="1_9"></div>
+		
+		<div id="2_1"></div>
+		<div id="2_2"></div>
+		<div id="2_3"></div>
+		<div id="2_4"></div>
+		<div id="2_5"></div>
+		<div id="2_6"></div>
+		<div id="2_7"></div>
+		<div id="2_8"></div>
+		<div id="2_9"></div>
+		
+		<div id="3_1"></div>
+		<div id="3_2"></div>
+		<div id="3_3"></div>
+		<div id="3_4"></div>
+		<div id="3_5"></div>
+		<div id="3_6"></div>
+		<div id="3_7"></div>
+		<div id="3_8"></div>
+		<div id="3_9"></div>
+		
+		<div id="4_1"></div>
+		<div id="4_2"></div>
+		<div id="4_3"></div>
+		<div id="4_4"></div>
+		<div id="4_5"></div>
+		<div id="4_6"></div>
+		<div id="4_7"></div>
+		<div id="4_8"></div>
+		<div id="4_9"></div>
+		
+		<div id="5_1"></div>
+		<div id="5_2"></div>
+		<div id="5_3"></div>
+		<div id="5_4"></div>
+		<div id="5_5"></div>
+		<div id="5_6"></div>
+		<div id="5_7"></div>
+		<div id="5_8"></div>
+		<div id="5_9"></div>
+		
+		<div id="6_1"></div>
+		<div id="6_2"></div>
+		<div id="6_3"></div>
+		<div id="6_4"></div>
+		<div id="6_5"></div>
+		<div id="6_6"></div>
+		<div id="6_7"></div>
+		<div id="6_8"></div>
+		<div id="6_9"></div>
+		
+		<div id="7_1"></div>
+		<div id="7_2"></div>
+		<div id="7_3"></div>
+		<div id="7_4"></div>
+		<div id="7_5"></div>
+		<div id="7_6"></div>
+		<div id="7_7"></div>
+		<div id="7_8"></div>
+		<div id="7_9"></div>
+		
+		<div id="8_1"></div>
+		<div id="8_2"></div>
+		<div id="8_3"></div>
+		<div id="8_4"></div>
+		<div id="8_5"></div>
+		<div id="8_6"></div>
+		<div id="8_7"></div>
+		<div id="8_8"></div>
+		<div id="8_9"></div>
+		
+		<div id="9_1"></div>
+		<div id="9_2"></div>
+		<div id="9_3"></div>
+		<div id="9_4"></div>
+		<div id="9_5"></div>
+		<div id="9_6"></div>
+		<div id="9_7"></div>
+		<div id="9_8"></div>
+		<div id="9_9"></div>
+	</div>
+	<div id="numbers">
+		<div id="0">0</div>
+		<div id="1">1</div>
+		<div id="2">2</div>
+		<div id="3">3</div>
+		<div id="4">4</div>
+		<div id="5">5</div>
+		<div id="6">6</div>
+		<div id="7">7</div>
+		<div id="8">8</div>
+		<div id="9">9</div>
+	</div>
+	<div id="download"><a href="akos_nikhazy_sudoku_engine.zip">Download (.zip)</a></div>
+</body>
+</html>
